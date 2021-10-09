@@ -1,0 +1,194 @@
+.what-i-do-wrapper {
+  max-width: 1170px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.what-i-do {
+  width: 100%;
+  height: 100%;
+  margin-top: 95px;
+}
+
+.what-i-do-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+.what-i-do-ul li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.what-i-do-fig {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  max-width: 270px;
+  max-height: 170px;
+}
+.what-i-do-fig-button {
+  width: 80px;
+  height: 74px;
+  background-color: unset;
+}
+.what-i-do-lending {
+  background-image: url(../img/tools-and-utensils.png);
+  background-repeat: no-repeat;
+}
+.what-i-do-responsive {
+  background-image: url(../img/responsive.png);
+  background-repeat: no-repeat;
+}
+.what-i-do-programming {
+  background-image: url(../img/programming.png);
+  background-repeat: no-repeat;
+}
+.what-i-do-coding {
+  background-image: url(../img/coding.png);
+  background-repeat: no-repeat;
+}
+.what-i-do-h1-small {
+  font-family: "Roboto-Black";
+  font-size: 54px;
+  font-weight: 900;
+
+  text-align: center;
+
+  color: black;
+}
+
+.what-i-do-h2 {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  text-align: center;
+  word-wrap: break-word;
+
+  color: #8993ad;
+}
+
+.what-i-do-price {
+  position: relative;
+  left: 50%;
+
+  width: 271px;
+  height: 65px;
+  margin-top: 76px;
+  margin-bottom: 100px;
+
+  cursor: pointer;
+  transform: translate(-50%, 0);
+}
+
+@media(max-width: 1024px) {
+  .what-i-do-h1-small {
+    margin-right: 30px;
+    font-size: 54px;
+  }
+
+  .what-i-do-wrapper {
+    max-width: 667px;
+  }
+
+  .what-i-do-ul li:not(:first-child) {
+    margin-left: unset;
+  }
+
+  .what-i-do-ul li:nth-child(2n) {
+    margin-left: 35px;
+  }
+
+  .what-i-do-ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .what-i-do-ul li {
+    margin-bottom: 65px;
+  }
+
+  .what-i-do-price {
+    width: 320px;
+    margin-top: 15px;
+  }
+}
+
+@media(max-width: 585px) {
+  .what-i-do-ul {
+    flex-direction: column;
+  }
+
+  .what-i-do-ul li {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .what-i-do-ul li:nth-child(2n) {
+    margin-left: 0px;
+  }
+
+  .what-i-do-fig {
+    max-width: unset;
+  }
+  .what-i-do-h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media(max-width: 320px) {
+  .what-i-do {
+    margin-top: 50px;
+  }
+
+  .what-i-do-wrapper {
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .what-i-do-h1-small {
+    font-size: 30px;
+
+    margin-right: unset;
+  }
+
+  .what-i-do-ul {
+    margin-top: unset;
+  }
+
+  .what-i-do-ul li {
+    margin-bottom: 30px;
+  }
+  .what-i-do-ul li:last-child {
+    margin-bottom: 15px;
+  }
+  .what-i-do-lending, .what-i-do-responsive,.what-i-do-programming,.what-i-do-coding {
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .what-i-do-h2 {
+    font-size: 16px;
+  }
+
+  .what-i-do-price {
+    width: 280px;
+    height: 55px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+ 
+}

@@ -1,0 +1,419 @@
+.services-main {
+  width: 100%;
+  height: 668px;
+}
+
+.services-wrapper {
+  position: relative;
+
+  overflow: hidden;
+  overflow: hidden;
+
+  /* естирование эллипса в фото */
+
+  max-width: 1920px;
+
+  background-color: #fbfbfb;
+}
+
+.services {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 100%;
+  height: 655px;
+}
+.gradient {
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(30deg, #ff8f5a, #ff2f96);
+}
+.services-parentheses {
+  font-family: "Roboto-Bold";
+  font-size: 49px;
+  line-height: 1.2;
+  /* color: #f91186; */
+  /* background: linear-gradient(30deg, #ff8f5a, #ff2f96) no-repeat; */
+  /* background-image: linear-gradient(30deg, #ff8f5a, #ff2f96) no-repeat; */
+  z-index: 1;
+}
+.width-height {
+  width: auto;
+  height: auto;
+}
+.services-parentheses-position {
+  position: absolute;
+  left: -205px;
+  top: 30px;
+}
+.services-parentheses-rotate {
+  transform: rotate(35deg);
+}
+.services-hash-symbol {
+  font-family: "Roboto-Bold";
+  font-size: 57px;
+}
+.services-hash-symbol-position {
+  position: absolute;
+  left: -90px;
+  top: 260px;
+}
+.services-close-tag {
+  font-family: "Roboto-Bold";
+  font-size: 38px;
+}
+.services-close-tag-position {
+  position: absolute;
+  left: 40px;
+  top: 560px;
+}
+.services-close-tag-rotate {
+  transform: rotate(-30deg);
+}
+.services-hash-symbol-rotate {
+  transform: rotate(20deg);
+}
+.services-div1{
+  font-family: "Roboto-Bold";
+  font-size: 30px;
+} 
+.services-div1-position{
+  position: absolute;
+  top: 55px;
+  left: 455px;
+ 
+}
+.services-div1-rotate{
+  transform: rotate(-15deg);
+}
+
+.services-div2{
+  font-family: "Roboto-Bold";
+  font-size: 40px;
+} 
+.services-div2-position{
+  position: absolute;
+  left: 620px;
+  top: 430px;
+}
+.services-div2-rotate{
+  transform: rotate(20deg);
+}
+
+.ellipse {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  overflow: hidden;
+
+  width: 814px;
+  height: 630px;
+}
+
+.top-section__txt {
+  flex-grow: 1;
+
+  padding-left: 40px;
+}
+
+.top-section__hgroup {
+  padding-top: 185px;
+}
+
+.photo-div {
+  position: relative;
+  top: 15px;
+  right: -45px;
+
+  overflow-y: hidden;
+}
+
+.personal-position {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 185px;
+  padding-left: 40px;
+}
+
+.h1-personal {
+  font-family: "Roboto-Black";
+  font-size: 80px;
+  font-weight: 900;
+  font-style: normal;
+
+  padding-bottom: 25px;
+}
+
+.knowledges {
+  font-family: "Roboto-Regular";
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+
+  padding-top: 15px;
+  padding-bottom: 45px;
+
+  color: #8993ad;
+}
+
+.know-more {
+  width: 271px;
+  height: 61px;
+
+  cursor: pointer;
+}
+
+.personal-photo {
+  width: 435px;
+  margin-top: 5px;
+}
+
+.ellipse-photo {
+  position: relative;
+}
+
+@media(max-width: 1200.98px) {
+  .photo-div {
+    position: relative;
+    right: 35px;
+
+    overflow-y: unset;
+  }
+}
+
+@media(max-width: 1024px) {
+  .fixed-container2 {
+    max-width: 1024px;
+  }
+  .services-parentheses-position {
+    left: 80px;
+    top: 50px;
+  }
+  .services-hash-symbol-position {
+    left: 57px;
+    top: 525px;
+  }
+  .services-close-tag-position {
+    top: 480px;
+    left: 360px;
+  }
+  .services-div1-position{
+    top: 130px;
+    left: 420px;
+    transform: rotate(20deg);
+  }
+
+  .ellipse {
+    width: 678px;
+  }
+
+  .services-main {
+    padding-left: unset;
+  }
+
+  .services {
+    flex-wrap: wrap;
+
+    height: unset;
+  }
+
+  .personal-position {
+    padding-top: 210px;
+  }
+
+  .h1-personal {
+    font-size: 54px;
+  }
+
+  .top-section__hgroup {
+    padding-top: 210px;
+  }
+
+  .know-more {
+    width: 320px;
+    height: 70px;
+  }
+
+  .photo-div {
+    position: relative;
+
+    overflow-y: unset;
+  }
+
+  .knowledges {
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+}
+
+@media(max-width: 953px) {
+  .top-section__txt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .top-section__hgroup {
+    padding-top: 30px;
+  }
+
+  .personal-photo {
+    height: 635px;
+  }
+
+  .ellipse {
+    top: 25px;
+    bottom: unset;
+  }
+}
+
+@media(max-width: 585px) {
+  .services-wrapper {
+    width: 100%;
+  }
+
+  .services {
+    justify-content: center;
+  }
+
+  .top-section__txt {
+    padding-left: unset;
+  }
+
+  .photo-div {
+    position: unset;
+    right: unset;
+
+    width: 320px;
+    height: 410px;
+    margin-top: 5px;
+  }
+
+  .personal-photo {
+    justify-content: unset;
+
+    width: 220px;
+    height: 340px;
+    margin-top: 70px;
+    margin-left: 80px;
+  }
+
+  .ellipse-photo {
+    width: 320px;
+  }
+
+  .ellipse {
+    top: 20px;
+    right: -10px;
+
+    height: 395px;
+  }
+
+  .personal-information {
+    min-width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .personal-position {
+    align-items: center;
+
+    padding-top: 20px;
+    padding-left: unset;
+  }
+
+  .h1-personal {
+    font-size: 30px;
+
+    padding-bottom: 15px;
+  }
+
+  .knowledges {
+    font-size: 16px;
+
+    padding-top: unset;
+    padding-bottom: 30px;
+  }
+
+  .know-more {
+    font-size: 16px;
+
+    width: 280px;
+    height: 55px;
+  }
+
+  @media(max-width: 320px) {
+    .ellipse {
+      right: -30px;
+      bottom: auto;
+    }
+    .services-parentheses {
+      font-size: 25px;
+    }
+    .services-hash-symbol {
+      font-size: 29px;
+    }
+    .services-close-tag {
+      font-size: 19px;
+    }
+    .services-div1 {
+      display: none;  
+    }
+    .services-div2 {
+      font-size: 15px;
+    }
+    .services-parentheses-position {
+      top: 45px;
+      left: 50px;
+    }
+    .services-hash-symbol-position {
+      left: 38px;
+      top: 155px;
+    }
+    .services-close-tag-position {
+      top: 30px;
+      left: 172px;
+    }
+    .services-div2-position {
+      top: 95px;
+      left: 245px;
+    }
+    .top-section__hgroup {
+      width: 100%;
+      padding-top: 18px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .photo-div {
+      overflow: hidden;
+    }
+
+    .personal-photo {
+      height: 335px;
+      margin-top: 80px;
+    }
+
+    .h1-personal {
+      padding-left: 5px;
+    }
+
+    .knowledges {
+      line-height: 1.5;
+
+      padding-bottom: 22px;
+
+      text-align: center;
+    }
+
+    .name-sevice {
+      font-size: 28px;
+    }
+  }
+}

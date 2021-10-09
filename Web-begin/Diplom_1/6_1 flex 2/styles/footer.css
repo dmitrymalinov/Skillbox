@@ -1,0 +1,270 @@
+.footer-fixed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 1170px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-ul {
+    margin-top: 25px;
+}
+
+.footer-ul-li {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+
+    word-wrap: break-word;
+
+    color: #8993ad;
+}
+
+.footer-ul li:not(:first-child) {
+    margin-top: 5px;
+}
+.footer-ul-li a:hover {
+    color: #f53f4f;
+    border-bottom: 1px solid;
+}
+
+.footer-contacts {
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 2.389;
+
+    margin-left: 100px;
+
+    word-wrap: break-word;
+}
+
+.footer-contacts-phone {
+    margin-top: 10px;
+}
+
+.footer-contacts-phone a {
+    margin-left: 15px;
+}
+
+.footer-contacts-email a {
+    margin-left: 25px;
+}
+.footer-contacts-phone a:hover {
+    color: #f53f4f;
+    border-bottom: 1px solid;
+}
+
+.footer-contacts-email a:hover {
+    color: #f53f4f;
+    border-bottom: 1px solid;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-right: 23px;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 25px;
+}
+
+.footer-social-links a:not(:first-child) {
+    margin-left: 20px;
+}
+
+.social-file {
+    display: block;
+
+    width: 36px;
+    height: 36px;
+
+    background: url(../img/social3.png) no-repeat;
+}
+
+.button-footer {
+    width: 250px;
+}
+
+.footer-social-vk {
+    background-position: bottom 0px left 0px;
+}
+
+.footer-social-facebook {
+    background-position: bottom 0px left -55px;
+}
+
+.footer-social-twitter {
+    background-position: bottom 0px left -110px;
+}
+
+.footer-social-instagramm {
+    background-position: bottom 0px left -168px;
+}
+.footer-social-vk:hover {
+    background: url(../img/social3.png) no-repeat;
+    background-position: bottom -40px left 0px;
+}
+
+/* .footer-social-vk :hover {
+    color: #f53f4f;
+} */
+
+.footer-social-facebook:hover {
+    background: url(../img/social3.png) no-repeat;
+    background-position: bottom -33px left -55px;
+}
+
+.footer-social-twitter:hover {
+    background: url(../img/social3.png) no-repeat;
+    background-position: bottom -35px left -110px;
+}
+
+.footer-social-instagramm:hover {
+    background: url(../img/social3.png) no-repeat;
+    background-position: bottom -35px left -168px;
+}
+
+.footer-contacts a {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.copyright {
+    height: 85px;
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    color: white;
+    background-color: #31293c;
+}
+
+.copyright p {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 3.733;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+}
+
+@media(max-width: 1024px) {
+    .footer-fixed-container {
+        flex-wrap: wrap;
+
+        padding-left: 40px;
+    }
+
+    .footer-ul {
+        margin-top: 45px;
+    }
+
+    .footer-contacts {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .footer-contacts a {
+        margin-left: 20px;
+    }
+
+    .footer-social {
+        margin-top: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer-fixed-container {
+        max-width: 320px;
+        margin-top: 45px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .footer-ul {
+        margin-top: unset;
+    }
+
+    .footer-ul li:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .footer-ul-li {
+        font-size: 15px;
+    }
+   
+    .footer-contacts {
+        font-size: 20px;
+        font-style: normal;
+        line-height: unset;
+
+        margin-left: unset;
+
+        color: rgb(137, 147, 173);
+    }
+
+    .footer-contacts-email {
+        margin-top: 25px;
+    }
+
+    .footer-contacts a {
+        font-weight: 500;
+
+        margin-left: 10px;
+    }
+
+    .footer-phone-image {
+        width: 14px;
+        height: 10px;
+    }
+
+    .footer-email-img {
+        width: 14px;
+        height: 10px;
+    }
+
+    .footer-contacts-phone {
+        margin-top: 25px;
+    }
+
+    .footer-social {
+        margin-top: 30px;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .button-footer {
+        width: 280px;
+        height: 55px;
+    }
+
+    .footer-social-links {
+        margin-top: 45px;
+    }
+
+    .copyright {
+        font-size: 12px;
+
+        height: 50px;
+        margin-top: 50px;
+    }
+
+    .copyright p {
+        line-height: 3;
+
+        padding-top: unset;
+    }
+}

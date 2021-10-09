@@ -1,0 +1,238 @@
+.what-i-do-examples {
+  background-color: #fbfbfb;
+}
+.mySwiper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.swiper-test {
+  
+  position: relative;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+}
+.examples-navigation {
+  /* height: 63px;
+  border: 1px solid red; */
+  max-width: 1232;
+  position: relative;
+  
+  
+}
+.swiper-slide{
+  width: 370px;
+}
+.examples-fig {
+  width: 370px;
+}
+.what-i-do-examples-h1-small {
+  margin-bottom: 110px;
+  padding-top: 105px;
+  
+  font-size: 54px;
+  font-weight: 900;
+
+  text-align: center;
+
+  color: black;
+}
+.swiper-pagination-container {
+  display: none;
+}
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background-color: #ff4e2e;
+}
+.what-i-do-examples-ul::-webkit-scrollbar {
+  display: none;
+}
+
+.what-i-do-examples-ul li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.what-i-do-examples-li-h2 {
+  margin-top: 13px;
+}
+
+.what-i-do-examples-arrow-left {
+  background: url(../img/leftarrow.png) no-repeat;
+  background-position: center;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  top: -240px;
+  z-index: 2;
+}
+.what-i-do-examples-arrow-right {
+  background: url(../img/rightarrow.png) no-repeat;
+  background-position: center;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  right: -3px;
+  top: -246px;
+  z-index: 2;
+}
+
+.examples-price {
+  display: none;
+}
+
+.examples-carousel-links {
+  display: none;
+}
+
+@media(max-width: 1024px) {
+  .mySwiper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .examples-fig {
+    width: 455px;
+  }
+  .swiper-pagination-container {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: 83px;
+  }
+  
+  .swiper-pagination {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+  }
+  .swiper-pagination-bullets span:first-child {
+    margin-left: 25px;
+  }
+  .swiper-pagination-bullet {
+    margin-right: 30px;
+  }
+.h1-small {
+	margin-right: unset;
+}
+.what-i-do-examples-arrow-left {
+    display: none;
+  }
+
+  .what-i-do-examples-arrow-right {
+    display: none;
+  }
+
+  .what-i-do-examples-h1 {
+    margin-bottom: 105px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 455px;
+    height: 360px;
+    object-fit: cover;
+  }  
+  .what-i-do-examples-li-h2 {
+    margin-top: unset;
+    font-size: 25px;
+    padding-top: 13px;
+    margin-right: 16px;
+  }
+
+  .examples-price {
+    display: block;
+
+    height: 65px;
+    margin-top: 100px;
+  }
+
+  .examples-hide {
+    display: none;
+  }
+
+  .examples-carousel-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 70px;
+  }
+
+  .examples-carousel-links li:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+@media(max-width: 320px) {
+  .mySwiper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .examples-fig {
+    width: 280px;
+  }
+  .what-i-do-examples-h1 {
+    line-height: 1.167;
+
+    margin-bottom: 40px;
+  }
+
+  .what-i-do-examples-h1 {
+    padding-top: 3px;
+  }
+  .what-i-do-examples-h1-small{
+    font-size: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 45px;
+    margin-bottom: 40px;
+    line-height: 35px;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 280px;
+	height: 250px;
+	object-fit: cover;
+}  
+
+  .what-i-do-examples-li-h2 {
+    font-size: 18px;
+    margin-right: unset;
+    margin-left: unset;
+    padding-top: 15px;
+  }
+  .swiper-pagination-container {
+    margin-top: 25px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: unset;
+  }
+  .swiper-pagination-bullets span:first-child {
+    margin-left: unset;
+  }
+
+  .examples-carousel-links {
+    margin-top: 17px;
+  }
+
+  .examples-price {
+    display: none;
+  }
+
+  .examples-hide {
+    display: block;
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}

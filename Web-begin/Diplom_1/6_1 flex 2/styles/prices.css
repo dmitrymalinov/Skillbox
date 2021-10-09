@@ -1,0 +1,184 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 365px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  background: linear-gradient(30deg, #ff8f5a, #ff2f96) no-repeat;
+}
+
+.fixed-container3 {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.prices-color {
+  color: white;
+}
+.prices-parentheses1{
+  font-weight: 700;
+  font-size: 49px;
+  
+}
+.prices-parentheses1-position {
+  position: absolute;
+  left: -245px;
+  top: 70px;
+  transform: rotate(30deg);
+}
+.prices-parentheses2{
+  font-weight: 700;
+  font-size: 48px;
+}
+.prices-parentheses2-position{
+  position: absolute;
+  right: -265px;
+  top: 270px;
+  transform: rotate(-20deg);
+}
+.prices-hash-symbol{
+  font-weight: 700;
+  font-size: 57px;
+  
+}
+.prices-hash-symbol-position {
+  position: absolute;
+  top: 260px;
+  left: -130px;
+  transform: rotate(15deg);
+}
+.prices-close-tag {
+  font-weight: 700;
+  font-size: 46px;
+}
+.prices-close-tag-position {
+  position: absolute;
+  right: -170px;
+  top: 80px;
+  transform: rotate(-20deg);
+}
+.prices-div{
+  font-weight: 700;
+  font-size: 37px;
+}
+.prices-div-position{
+  position: absolute;
+  right: 35px;
+  top: 310px;
+  transform: rotate(20deg);
+}
+.name-service {
+  font-size: 25px;
+  font-size: 45px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4;
+
+  margin-top: 75px;
+  padding-left: 115px;
+
+  text-align: left;
+  word-wrap: break-word;
+
+  color: #fff;
+}
+
+.name-service-detail {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+
+  margin-top: 30px;
+  padding-left: 115px;
+
+  text-align: left;
+  word-wrap: break-word;
+
+  color: #fff;
+}
+
+@media(max-width: 1024px) {
+  .name-service {
+    font-size: 45px;
+    line-height: 1.333;
+
+    margin-top: 75px;
+    margin-left: 20px;
+    padding-left: unset;
+  }
+
+  .name-service-detail {
+    line-height: 1.5;
+
+    margin-top: 35px;
+    margin-left: 20px;
+    padding-left: unset;
+  }
+  .prices-parentheses2 {
+    display: none;
+  }
+  .prices-hash-symbol {
+    display: none;
+  }
+  .prices-parentheses1-position {
+    left: 135px;
+    top: 30px;
+  }
+  .prices-parentheses1 {
+    font-size: 32px;
+  }
+  .prices-close-tag-position {
+    right: 75px;
+    top: 295px;
+  }
+  .prices-close-tag {
+    font-size: 40px;
+  }
+  .prices-div {
+    font-size: 25px;
+  }
+  .prices-div-position {
+    right: 435px;
+  }
+}
+
+@media(max-width: 320px) {
+  .prices {
+    padding-top: 45px;
+  }
+  .prices-parentheses1 {
+    display: none;
+  }
+  .prices-close-tag {
+    display: none;
+  }
+  .prices-div {
+    display: none;
+  }
+
+  .name-service {
+    font-size: 28px;
+    line-height: 1.429;
+
+    margin-top: unset;
+    margin-left: unset;
+
+    text-align: left;
+  }
+
+  .name-service-detail {
+    font-size: 15px;
+    line-height: 2;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: unset;
+
+    text-align: left;
+  }
+}
