@@ -159,6 +159,16 @@
     letter-spacing: 0.5px;
     padding-top: 10px;
 }
+.footer-contacts-h2 {
+    display: none;
+}
+.footer-social-links-h2 {
+    display: none;
+}
+.copyright-h2 {
+    display: none;
+}
+
 
 @media(max-width: 1024px) {
     .footer-fixed-container {
