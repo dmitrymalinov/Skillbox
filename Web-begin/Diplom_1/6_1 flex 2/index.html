@@ -57,6 +57,7 @@
     
     <script src="scripts/jquery-3.6.0.min.js"></script>
 	<script src="scripts/mob.js"></script>
+  <script src="scripts/jquery.maskedinput.min.js"></script>
 	
 
   </head>
@@ -81,6 +82,15 @@
               <button type="button" class="call-button">Заказать звонок</button>
             </li>
           </ul>
+          <div class="modal-phone-call-container">
+            <div class="modal-phone-call-content">
+              <span class="modal-phone-call-close">&times;</span>
+              <p class="modal-phone-call-p">Как к вам обратиться</p>
+              <input type="text" name="" class="modal-phone-call-input-text">
+              <p class="modal-phone-call-p">Ваш телефон</p>
+              <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+          </div>
           <input
             type="image"
             class="phone-call"

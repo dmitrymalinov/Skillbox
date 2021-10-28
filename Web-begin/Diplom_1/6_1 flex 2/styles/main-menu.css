@@ -87,6 +87,9 @@
 .phone-call {
   display: none;
 }
+.modal-phone-call-container{
+  display: none;
+}
 
 @media(max-width: 1024px) {
   .fixed-container {
