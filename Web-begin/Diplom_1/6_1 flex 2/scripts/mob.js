@@ -1,27 +1,45 @@
-$(function(){
-	$('.mobile-menu').click(function(){
-		var menu = $('.nav-class');
-		menu.slideToggle(500);
-  	})
+$(function () {
+  $(".mobile-menu").click(function () {
+    var menu = $(".nav-class");
+    menu.slideToggle(500);
+  });
 });
 $(document).ready(
-	function () {
-  console.log("document loaded");
   $(function () {
-    //2. Получить элемент, к которому необходимо добавить маску
+    //phone mask
     $(".phone-class").mask("8(999) 999-99-99");
-  });
-  // modal window for phone call
-  //open window
-$(function(){
-	//modal conntainer
-	//var ModalPhoneCallContainer = $('modal-phone-call-container');
-	//var CallButton = $('call-button');
-	//var ModalPhoneCallClose = $('modal-phone-call-close');
-	//events
-	$('call-button').click(function () {
-		$('modal-phone-call-container').css('display','block');	
+  })
+);
+//open modal window
+/* $(document).ready(
+  $(function () {
+    //call button click
+    $(".call-button").click(function () {
+      $("modal-phone-call-container").css("display", "block");
+    });
+  })
+); */
+//close modal window
+/* $(document).ready(
+	$(function () {
+	  //call button click
+	  $(".modal-phone-call-close").click(function () {
+		$("modal-phone-call-container").css("display", "none");
+	  });
 	})
-		
-
+  ); */
+//
+$(function () {
+	var buttoncall = $("call-button");
+	buttoncall.click(function () {
+		$(".modal-phone-call-container").css("display","block");	
+	});
 });
+$(document).ready(
+	$(function () {
+		var buttoncall = $(".call-button");
+		buttoncall.click(function () {
+			$(".modal-phone-call-container").css("display","block");	
+		});
+	})	
+);
