@@ -40,15 +40,20 @@
 .li-menu {
   font-size: 25px;
 }
-
+/* .modal-phone-call-p {
+  margin-bottom: 20px;
+  
+} */
+.modal-phone-call-p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .phone-class {
   display: flex;
   align-items: center;
   flex-direction: row;
 
   margin-right: 38px;
-  padding-top: 27px;
-  padding-bottom: 40px;
 }
 
 .li-phone {
@@ -110,6 +115,8 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  position: fixed;
+  width: 20%;
 }
 .modal-phone-call-close {
   color: #aaaaaa;
@@ -135,6 +142,15 @@
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
+}
+.modal-phone-call-input-text, 
+.phone-class-input{
+  border: 1px solid #ff4e2e;
+  margin-bottom: 20px;
+}
+.modal-phone-call-input-text,
+.phone-class {
+  width: 100%;
 }
 
 @media(max-width: 1024px) {

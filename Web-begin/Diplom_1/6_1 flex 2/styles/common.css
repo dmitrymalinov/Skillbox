@@ -63,6 +63,12 @@ h4,
 p {
 	margin: 0; /*обнуляет margin в заголовках*/
 }
+p {
+	font-family: "Roboto-Black";
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;	
+}
 
 /*img{
 	max-width: 100%; задает размер изображений по ширине
@@ -140,6 +146,13 @@ button:hover {
 main {
 	position: relative;
 	overflow-x: hidden;
+}
+.input-common{
+	font-family: "Roboto-Regular";
+  	font-size: 20px;
+  	font-weight: normal;
+  	font-style: normal;
+  	line-height: 1.5;
 }
 @font-face {
 	font-family: "Roboto-Black";
