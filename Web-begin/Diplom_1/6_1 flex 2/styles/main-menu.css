@@ -100,7 +100,7 @@
   display: none; 
   position: fixed; 
   z-index: 4; 
-  padding-top: 100px; 
+  padding-top: 80px; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -114,9 +114,10 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
   position: fixed;
   width: 20%;
+  min-width: 275px;
+  right: 34.5%;
 }
 .modal-phone-call-close {
   color: #aaaaaa;
@@ -131,7 +132,7 @@
   cursor: pointer;
 }
 .modal-phone-call-content-send-button {
-  width: 271px;
+    min-width: 231px;
     height: 61px;
     color: white;
     background-color: #ff4e2e;
@@ -148,10 +149,10 @@
   border: 1px solid #ff4e2e;
   margin-bottom: 20px;
 }
-.modal-phone-call-input-text,
-.phone-class {
+/* .modal-phone-call-input-text, */
+/* .phone-class {
   width: 100%;
-}
+} */
 
 @media(max-width: 1024px) {
   .fixed-container {

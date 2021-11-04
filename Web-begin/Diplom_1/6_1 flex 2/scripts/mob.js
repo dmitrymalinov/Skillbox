@@ -51,3 +51,11 @@ $(document).ready(
 		});
 	})	
 );
+$(document).ready(
+	$(function () {
+		var buttonsendcall = $(".modal-phone-call-content-send-button");
+		buttonsendcall.click(function () {
+			$(".modal-phone-call-container").css("display","none");	
+		});
+	})	
+);
