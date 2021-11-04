@@ -29,17 +29,25 @@ $(document).ready(
 	})
   ); */
 //
-$(function () {
+/* $(function () {
 	var buttoncall = $("call-button");
 	buttoncall.click(function () {
 		$(".modal-phone-call-container").css("display","block");	
 	});
-});
+}); */
 $(document).ready(
 	$(function () {
 		var buttoncall = $(".call-button");
 		buttoncall.click(function () {
 			$(".modal-phone-call-container").css("display","block");	
+		});
+	})	
+);
+$(document).ready(
+	$(function () {
+		var buttoncall = $(".modal-phone-call-close");
+		buttoncall.click(function () {
+			$(".modal-phone-call-container").css("display","none");	
 		});
 	})	
 );
