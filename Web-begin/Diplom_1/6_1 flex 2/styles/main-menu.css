@@ -40,10 +40,6 @@
 .li-menu {
   font-size: 25px;
 }
-/* .modal-phone-call-p {
-  margin-bottom: 20px;
-  
-} */
 .modal-phone-call-p {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -54,6 +50,8 @@
   flex-direction: row;
 
   margin-right: 38px;
+  padding-top: 27px;
+  padding-bottom: 40px;
 }
 
 .li-phone {
