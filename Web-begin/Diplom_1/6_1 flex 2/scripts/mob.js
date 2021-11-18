@@ -59,3 +59,12 @@ $(document).ready(
 		});
 	})	
 );
+// price what-i-do-price
+$(document).ready(
+	$(function () {
+		var buttoncall = $(".what-i-do-price");
+		buttoncall.click(function () {
+			$(".modal-what-i-do-price-container").css("display","block");	
+		});
+	})	
+);
