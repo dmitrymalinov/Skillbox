@@ -68,3 +68,19 @@ $(document).ready(
 		});
 	})	
 );
+$(document).ready(
+	$(function () {
+		var buttoncall = $(".modal-what-i-do-price-close");
+		buttoncall.click(function () {
+			$(".modal-what-i-do-price-container").css("display","none");	
+		});
+	})	
+);
+$(document).ready(
+	$(function () {
+		var buttonsendcall = $(".modal-what-i-do-price-content-send-button");
+		buttonsendcall.click(function () {
+			$(".modal-what-i-do-price-container").css("display","none");	
+		});
+	})	
+);

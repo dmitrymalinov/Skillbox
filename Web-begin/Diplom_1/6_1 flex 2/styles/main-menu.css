@@ -97,7 +97,7 @@
 .modal-phone-call-container {
   display: none; 
   position: fixed; 
-  z-index: 4; 
+  z-index: 15; 
   padding-top: 80px; 
   left: 0;
   top: 0;
