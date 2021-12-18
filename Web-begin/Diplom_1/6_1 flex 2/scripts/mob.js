@@ -10,37 +10,14 @@ $(document).ready(
     $(".phone-class").mask("8(999) 999-99-99");
   })
 );
-//open modal window
-/* $(document).ready(
-  $(function () {
-    //call button click
-    $(".call-button").click(function () {
-      $("modal-phone-call-container").css("display", "block");
-    });
-  })
-); */
-//close modal window
-/* $(document).ready(
-	$(function () {
-	  //call button click
-	  $(".modal-phone-call-close").click(function () {
-		$("modal-phone-call-container").css("display", "none");
-	  });
-	})
-  ); */
-//
-/* $(function () {
-	var buttoncall = $("call-button");
-	buttoncall.click(function () {
-		$(".modal-phone-call-container").css("display","block");	
-	});
-}); */
+//call button
 $(document).ready(
 	$(function () {
 		var buttoncall = $(".call-button");
 		buttoncall.click(function () {
 			$(".modal-phone-call-container").css("display","block");	
 		});
+		
 	})	
 );
 $(document).ready(
@@ -81,6 +58,31 @@ $(document).ready(
 		var buttonsendcall = $(".modal-what-i-do-price-content-send-button");
 		buttonsendcall.click(function () {
 			$(".modal-what-i-do-price-container").css("display","none");	
+		});
+	})	
+);
+//know-more
+$(document).ready(
+	$(function () {
+		var buttonKnowMore = $(".know-more");
+		buttonKnowMore.click(function () {
+			$(".know-more-modal-container").css("display","block");	
+		});
+	})	
+);
+$(document).ready(
+	$(function () {
+		var buttonKnowMoreclose = $(".modal-know-more-close");
+		buttonKnowMoreclose.click(function () {
+			$(".know-more-modal-container").css("display","none");	
+		});
+	})	
+);
+$(document).ready(
+	$(function () {
+		var buttonsendcallKnowMoreSend = $(".modal-know-more-content-send-button");
+		buttonsendcallKnowMoreSend.click(function () {
+			$(".know-more-modal-container").css("display","none");	
 		});
 	})	
 );
