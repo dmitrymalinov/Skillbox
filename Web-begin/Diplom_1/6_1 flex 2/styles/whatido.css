@@ -142,6 +142,7 @@
 .phone-class-input{
   border: 1px solid #ff4e2e;
   margin-bottom: 20px;
+  width: 100%;
 }
 .modal-what-i-do-price-call-p,
 .modal-what-i-do-price-p {
@@ -247,6 +248,10 @@
     height: 55px;
     margin-top: 15px;
     margin-bottom: 50px;
+  }
+  .modal-what-i-do-price-content{
+    right: unset;
+    width: unset;
   }
  
 }

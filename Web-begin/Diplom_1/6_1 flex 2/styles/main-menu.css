@@ -146,6 +146,7 @@
 .phone-class-input{
   border: 1px solid #ff4e2e;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 @media(max-width: 1024px) {
@@ -256,5 +257,9 @@
   .li-menu a:hover {
     color: #f53f4f;
     border-bottom: 1px solid;
+  }
+  .modal-phone-call-content{
+    right: unset;
+    width: unset;
   }
 }

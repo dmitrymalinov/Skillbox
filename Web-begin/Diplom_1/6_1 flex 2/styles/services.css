@@ -229,8 +229,9 @@
 .phone-class-input{
   border: 1px solid #ff4e2e;
   margin-bottom: 20px;
+  width: 100%;
 }
-.modal-know-more-call-p {
+.modal-know-more-p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -471,6 +472,10 @@
 
     .name-sevice {
       font-size: 28px;
+    }
+    .modal-know-more-content{
+      right: unset;
+      width: unset;
     }
   }
 }
