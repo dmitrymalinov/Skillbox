@@ -94,10 +94,10 @@
         <div class="modal-phone-call-content">
           <span class="modal-phone-call-close">&times;</span>
           <p class="modal-phone-call-p">Как к вам обратиться</p>
-          <input type="text" name="" class="modal-phone-call-input-text input-common">
+          <input type="text" name="" class="modal-phone-call-input-text input-common" required>
           <p class="modal-phone-call-p">Ваш телефон</p>
           <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-          <button class="modal-phone-call-content-send-button">Отправить</button>
+          <button type="button" class="modal-phone-call-content-send-button" onclick="OrderCall()">Отправить</button>
         </div>
       </div>
     </header>
