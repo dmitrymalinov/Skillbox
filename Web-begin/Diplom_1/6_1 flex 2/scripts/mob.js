@@ -28,14 +28,21 @@ $(document).ready(
 		});
 	})	
 );
-$(document).ready(
+/* $(document).ready(
 	$(function () {
+		//checking fields
+		//class modal-phone-call-input-text input-common
+		var userinput = $(".modal-phone-call-input-text").val();
+		if (userinput == "") {
+			alert("Необходимо ввести имя");
+			return false;
+		}
 		var buttonsendcall = $(".modal-phone-call-content-send-button");
 		buttonsendcall.click(function () {
 			$(".modal-phone-call-container").css("display","none");	
 		});
 	})	
-);
+); */
 // price what-i-do-price
 $(document).ready(
 	$(function () {
@@ -86,3 +93,19 @@ $(document).ready(
 		});
 	})	
 );
+function OrderCall() {
+	var userinputname = $(".modal-phone-call-input-text").val();
+	if (userinputname == "") {
+		alert("Необходимо ввести имя");
+		return false;
+	}
+	var userinputmail = $(".phone-class-input").val();
+	if (userinputmail == "") {
+		alert("Необходимо указать e-mail");
+		return false;
+	}
+	var buttonsendcall = $(".modal-phone-call-content-send-button");
+	buttonsendcall.click(function () {
+		$(".modal-phone-call-container").css("display","none");	
+	});
+}
