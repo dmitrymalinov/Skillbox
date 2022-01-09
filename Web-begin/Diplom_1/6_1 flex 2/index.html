@@ -172,10 +172,10 @@
             <p class="modal-know-more-p">Как к вам обратиться</p>
             <input type="text" name="" class="modal-know-more-input-text input-common">
             <p class="modal-know-more-p">Ваш телефон</p>
-            <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common phone-class-input-knowmore" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <p class="modal-know-more-p">Ваш e-mail</p>
-            <input type="e-mail" name="" class="modal-know-more-input-text input-common" placeholder="your@email.com">
-            <button class="modal-know-more-content-send-button">Отправить</button>
+            <input type="e-mail" name="" class="modal-know-more-input-text input-common modal-know-more-input-text-email" placeholder="your@email.com">
+            <button class="modal-know-more-content-send-button" onclick="KnowMoreCheck()">Отправить</button>
           </div>
         </div>
       </section>
@@ -216,10 +216,10 @@
             <p class="modal-what-i-do-price-call-p">Как к вам обратиться</p>
             <input type="text" name="" class="modal-what-i-do-price-input-text input-common">
             <p class="modal-what-i-do-price-p">Ваш телефон</p>
-            <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common phone-class-input-price" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <p class="modal-what-i-do-price-call-p">Ваш e-mail</p>
-            <input type="e-mail" name="" class="modal-what-i-do-price-input-text input-common" placeholder="your@email.com">
-            <button class="modal-what-i-do-price-content-send-button">Отправить</button>
+            <input type="e-mail" name="" class="modal-what-i-do-price-input-text input-common modal-what-i-do-price-input-text-email" placeholder="your@email.com">
+            <button class="modal-what-i-do-price-content-send-button" onclick="KnowPriceCheck()">Отправить</button>
           </div>
         </div>
       </section>
@@ -250,8 +250,7 @@
             <div class="swiper-pagination-container">
               <div class="swiper-pagination"></div>
             </div>
-            <!-- <button class="what-i-do-examples-arrow-right"></button>
-            <button class="what-i-do-examples-arrow-left"></button> -->
+           
           </div>
           <div class="examples-navigation">
             <button class="what-i-do-examples-arrow-right"></button>
