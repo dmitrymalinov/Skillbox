@@ -101,11 +101,44 @@ function OrderCall() {
 	}
 	var userinputmail = $(".phone-class-input").val();
 	if (userinputmail == "") {
-		alert("Необходимо указать e-mail");
+		alert("Необходимо указать телефон");
 		return false;
 	}
-	var buttonsendcall = $(".modal-phone-call-content-send-button");
-	buttonsendcall.click(function () {
-		$(".modal-phone-call-container").css("display","none");	
-	});
+	$(".modal-phone-call-container").css("display","none");
+}
+function KnowMoreCheck() {
+	var userinputnameknow = $(".modal-know-more-input-text").val();
+	if (userinputnameknow == "") {
+		alert("Необходимо ввести имя");
+		return false;
+	}
+	var userinputphoneknow = $(".phone-class-input-knowmore").val();
+	if (userinputphoneknow == "") {
+		alert("Необходимо ввести телефон");
+		return false;
+	}
+	var userinputemailknow = $(".modal-know-more-input-text-email").val();
+	if (userinputemailknow == "") {
+		alert("Необходимо ввести e-mail");
+		return false;
+	}
+	$(".know-more-modal-container").css("display","none");
+}
+function KnowPriceCheck() {
+	var userinputnameknow = $(".modal-what-i-do-price-input-text").val();
+	if (userinputnameknow == "") {
+		alert("Необходимо ввести имя");
+		return false;
+	}
+	var userinputphoneknow = $(".phone-class-input-price").val();
+	if (userinputphoneknow == "") {
+		alert("Необходимо ввести телефон");
+		return false;
+	}
+	var userinputemailknow = $(".modal-what-i-do-price-input-text-email").val();
+	if (userinputemailknow == "") {
+		alert("Необходимо ввести e-mail");
+		return false;
+	}
+	$(".modal-what-i-do-price-container").css("display","none");	
 }
