@@ -54,10 +54,11 @@
       crossorigin="anonymous"
     />
     <!-- <script src="scripts/swiper-bundle.js"></script> -->
-    
+    <script src="scripts/just-validate.production.min.js"></script>
     <script src="scripts/jquery-3.6.0.min.js"></script>
-	<script src="scripts/mob.js"></script>
-  <script src="scripts/jquery.maskedinput.min.js"></script>
+	  <!-- <script src="scripts/mob.js"></script> -->
+    <script src="scripts/jquery.maskedinput.min.js"></script>
+    
 	
 
   </head>
@@ -90,16 +91,33 @@
           />
         </div>
       </div>
-      <div class="modal-phone-call-container">
+      <form class="modal-phone-call-container" id="modal-phone-call-container">
         <div class="modal-phone-call-content">
           <span class="modal-phone-call-close">&times;</span>
           <p class="modal-phone-call-p">Как к вам обратиться</p>
-          <input type="text" name="" class="modal-phone-call-input-text input-common" required>
+          <input type="text" id="modal-phone-call-input-text" name="nameCall"  data-validate-field="nameCall" class="modal-phone-call-input-text input-common" required>
           <p class="modal-phone-call-p">Ваш телефон</p>
-          <input type="tel" name="phone" placeholder="8(999) 999-99-99" class="phone-class-input  input-common" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-          <button type="button" class="modal-phone-call-content-send-button" onclick="OrderCall()">Отправить</button>
+          <input type="tel" id="phone-class-input" name="phoneCall"  data-validate-field="phoneCall" placeholder="8(999) 999-99-99" class="phone-class-input  input-common" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <button action = "#" type="submit" class="modal-phone-call-content-send-button" id="btn-send" >Отправить</button>
         </div>
-      </div>
+      </form>
+      <!-- <script>
+        
+        const validation = new window.JustValidate("#modal-phone-call-container");
+        validation
+          .addField("#modal-phone-call-input-text", [
+          {
+              rule: "required",
+              errorMessage: "Name is required",
+            },
+          ])
+          .addField("#phone-class-input", [
+            {
+              rule: "required",
+              errorMessage: "Phone is required",
+            },
+          ]);
+      </script> -->
     </header>
     <main>
       <section class="services-wrapper">
@@ -312,5 +330,6 @@
     </footer>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/slider.js"></script>
+  <script src="scripts/mob.js"></script>
   </body>
 </html>

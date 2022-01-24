@@ -93,8 +93,51 @@ $(document).ready(
 		});
 	})	
 );
+/* $(document.ready)(
+  $(function () {
+    const validation = new JustValidate("#modal-phone-call-container");
+
+    validation
+      .addField("#modal-phone-call-input-text", [
+        {
+          rule: "minLength",
+          value: 3,
+        },
+        {
+          rule: "maxLength",
+          value: 100,
+        },
+      ])
+      .addField("#phone-class-input", [
+        {
+          rule: "required",
+          errorMessage: "Email is required",
+        },
+      ]);
+  })
+); */
 function OrderCall() {
-	var userinputname = $(".modal-phone-call-input-text").val();
+	/* const validation = new JustValidate('#modal-phone-call-container');
+
+	validation
+    .addField("#modal-phone-call-input-text", [
+      {
+        rule: "minLength",
+        value: 3,
+      },
+      {
+        rule: "maxLength",
+        value: 100,
+      },
+    ])
+    .addField("#phone-class-input", [
+      {
+        rule: "required",
+        errorMessage: "Email is required",
+      }
+    ]); */
+
+	/* var userinputname = $(".modal-phone-call-input-text").val();
 	if (userinputname == "") {
 		alert("Необходимо ввести имя");
 		return false;
@@ -103,8 +146,8 @@ function OrderCall() {
 	if (userinputmail == "") {
 		alert("Необходимо указать телефон");
 		return false;
-	}
-	$(".modal-phone-call-container").css("display","none");
+	} */
+	// $(".modal-phone-call-container").css("display","none");
 }
 function KnowMoreCheck() {
 	var userinputnameknow = $(".modal-know-more-input-text").val();
@@ -142,3 +185,36 @@ function KnowPriceCheck() {
 	}
 	$(".modal-what-i-do-price-container").css("display","none");	
 }
+function ValidateCallHeader() {
+
+	const validation = new window.JustValidate("#modal-phone-call-container");
+	validation
+          .addField("#modal-phone-call-input-text", [
+          {
+              rule: "required",
+              errorMessage: "Name is required",
+            },
+          ])
+          .addField("#phone-class-input", [
+            {
+              rule: "required",
+              errorMessage: "Phone is required",
+            },
+          ]);
+}
+
+function validateForms8899(selector, rules) {
+    new window.JustValidate(selector, {
+        rules: rules,
+        submitHandler: function (form, values, ajax) {
+            console.log(form);
+        }
+    });
+}
+function validateFormsNew() {
+	validateForms8899('#modal-phone-call-container', { nameCall: { required: true, errorMessage: "Error"}, phoneCall: { required: true, errorMessage: "Error"} });	
+}
+validateForms8899('#modal-phone-call-container', { nameCall: { required: true}, phoneCall: { required: true} });
+
+
+
