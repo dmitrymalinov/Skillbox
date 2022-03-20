@@ -111,7 +111,9 @@
   position: fixed;
   width: 20%;
   min-width: 275px;
-  right: 34.5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .modal-what-i-do-price-close {
   color: #aaaaaa;

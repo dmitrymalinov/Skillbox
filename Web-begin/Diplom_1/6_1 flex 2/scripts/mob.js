@@ -28,21 +28,6 @@ $(document).ready(
 		});
 	})	
 );
-/* $(document).ready(
-	$(function () {
-		//checking fields
-		//class modal-phone-call-input-text input-common
-		var userinput = $(".modal-phone-call-input-text").val();
-		if (userinput == "") {
-			alert("Необходимо ввести имя");
-			return false;
-		}
-		var buttonsendcall = $(".modal-phone-call-content-send-button");
-		buttonsendcall.click(function () {
-			$(".modal-phone-call-container").css("display","none");	
-		});
-	})	
-); */
 // price what-i-do-price
 $(document).ready(
 	$(function () {
@@ -62,15 +47,6 @@ $(document).ready(
 );
 $(document).ready(
 	$(function () {
-		var buttonsendcall = $(".modal-what-i-do-price-content-send-button");
-		buttonsendcall.click(function () {
-			$(".modal-what-i-do-price-container").css("display","none");	
-		});
-	})	
-);
-//know-more
-$(document).ready(
-	$(function () {
 		var buttonKnowMore = $(".know-more");
 		buttonKnowMore.click(function () {
 			$(".know-more-modal-container").css("display","block");	
@@ -85,136 +61,91 @@ $(document).ready(
 		});
 	})	
 );
-$(document).ready(
-	$(function () {
-		var buttonsendcallKnowMoreSend = $(".modal-know-more-content-send-button");
-		buttonsendcallKnowMoreSend.click(function () {
-			$(".know-more-modal-container").css("display","none");	
-		});
-	})	
-);
-/* $(document.ready)(
-  $(function () {
-    const validation = new JustValidate("#modal-phone-call-container");
-
-    validation
-      .addField("#modal-phone-call-input-text", [
-        {
-          rule: "minLength",
-          value: 3,
-        },
-        {
-          rule: "maxLength",
-          value: 100,
-        },
-      ])
-      .addField("#phone-class-input", [
-        {
-          rule: "required",
-          errorMessage: "Email is required",
-        },
-      ]);
-  })
-); */
-function OrderCall() {
-	/* const validation = new JustValidate('#modal-phone-call-container');
-
-	validation
-    .addField("#modal-phone-call-input-text", [
-      {
-        rule: "minLength",
-        value: 3,
-      },
-      {
-        rule: "maxLength",
-        value: 100,
-      },
-    ])
-    .addField("#phone-class-input", [
-      {
-        rule: "required",
-        errorMessage: "Email is required",
-      }
-    ]); */
-
-	/* var userinputname = $(".modal-phone-call-input-text").val();
-	if (userinputname == "") {
-		alert("Необходимо ввести имя");
-		return false;
-	}
-	var userinputmail = $(".phone-class-input").val();
-	if (userinputmail == "") {
-		alert("Необходимо указать телефон");
-		return false;
-	} */
-	// $(".modal-phone-call-container").css("display","none");
+//validations
+function ValidateMenu() {
+	errorFieldClass = 'justvalidate-invalid';
+	errorLabelCssClass = 'justvalidate-invalid-label';
+	rules = {
+		rule1:{
+			field:"#modal-phone-call-input-text",
+			rule: "required",
+            errorMessage: "Укажите Ваше имя",
+		},
+		rule2:{
+			field:"#phone-class-input",
+			rule: "required",
+            errorMessage: "Укажите телефон",
+		}
+	};
+	classToHide = ".modal-phone-call-container";
+	selector = '#modal-phone-call-container';
+	ValidateTopMod({selector,rules,errorFieldClass,errorLabelCssClass,classToHide})
 }
-function KnowMoreCheck() {
-	var userinputnameknow = $(".modal-know-more-input-text").val();
-	if (userinputnameknow == "") {
-		alert("Необходимо ввести имя");
-		return false;
-	}
-	var userinputphoneknow = $(".phone-class-input-knowmore").val();
-	if (userinputphoneknow == "") {
-		alert("Необходимо ввести телефон");
-		return false;
-	}
-	var userinputemailknow = $(".modal-know-more-input-text-email").val();
-	if (userinputemailknow == "") {
-		alert("Необходимо ввести e-mail");
-		return false;
-	}
-	$(".know-more-modal-container").css("display","none");
+function KnowMoreValidate() {
+	errorFieldClass = 'justvalidate-invalid';
+	errorLabelCssClass = 'justvalidate-invalid-label';
+	rules = {
+		rule1:{
+			field:"#modal-know-more-input-text",
+			rule: "required",
+            errorMessage: "Укажите Ваше имя",
+		},
+		rule2:{
+			field:"#phone-class-input-knowmore",
+			rule: "required",
+            errorMessage: "Укажите телефон",
+		},
+		rule3:{
+			field:"#modal-know-more-input-text-email",
+			rule: "required",
+            errorMessage: "Укажите e-mail",
+		}
+	};
+	classToHide = ".know-more-modal-container";
+	selector = '#know-more-modal-container';
+	ValidateTopMod({selector,rules,errorFieldClass,errorLabelCssClass,classToHide})
 }
-function KnowPriceCheck() {
-	var userinputnameknow = $(".modal-what-i-do-price-input-text").val();
-	if (userinputnameknow == "") {
-		alert("Необходимо ввести имя");
-		return false;
+function KnowPriceValidate() {
+	errorFieldClass = 'justvalidate-invalid';
+	errorLabelCssClass = 'justvalidate-invalid-label';
+	rules = {
+		rule1:{
+			field:"#modal-what-i-do-price-input-text",
+			rule: "required",
+            errorMessage: "Укажите Ваше имя",
+		},
+		rule2:{
+			field:"#phone-class-input-price",
+			rule: "required",
+            errorMessage: "Укажите телефон",
+		},
+		rule3:{
+			field:"#modal-what-i-do-price-input-text-email",
+			rule: "required",
+            errorMessage: "Укажите e-mail",
+		}
+	};
+	classToHide = ".modal-what-i-do-price-container";
+	selector = '#modal-what-i-do-price-container';
+	ValidateTopMod({selector,rules,errorFieldClass,errorLabelCssClass,classToHide})
+}
+function ValidateTopMod({selector,rules,ErrorFieldClass,errorLabelCssClass,classToHide}) {
+	const validation = new window.JustValidate(selector,{
+		errorFieldCssClass: ErrorFieldClass,
+		focusInvalidField: true,
+		errorLabelCssClass: errorLabelCssClass,
+    	//lockForm: true,
+	},);
+	for (const key in rules) {//ruleElement
+		if (Object.hasOwnProperty.call(rules, key)) {
+			const singleruleelement = rules[key];
+			validation.addField(singleruleelement.field,[{rule:rules[key].rule,errorMessage:rules[key].errorMessage}])
+		}
 	}
-	var userinputphoneknow = $(".phone-class-input-price").val();
-	if (userinputphoneknow == "") {
-		alert("Необходимо ввести телефон");
-		return false;
-	}
-	var userinputemailknow = $(".modal-what-i-do-price-input-text-email").val();
-	if (userinputemailknow == "") {
-		alert("Необходимо ввести e-mail");
-		return false;
-	}
-	$(".modal-what-i-do-price-container").css("display","none");	
+	validation.onSuccess((event) => {
+		$(classToHide).css("display","none");
+	  });
 }
-function ValidateCallHeader() {
-
-	const validation = new window.JustValidate("#modal-phone-call-container");
-	validation
-          .addField("#modal-phone-call-input-text", [
-          {
-              rule: "required",
-              errorMessage: "Name is required",
-            },
-          ])
-          .addField("#phone-class-input", [
-            {
-              rule: "required",
-              errorMessage: "Phone is required",
-            },
-          ]);
-}
-
-function validateForms8899(selector, rules) {
-    new window.JustValidate(selector, {
-        rules: rules,
-        submitHandler: function (form, values, ajax) {
-            console.log(form);
-        }
-    });
-}
-function validateFormsNew() {
-	validateForms8899('#modal-phone-call-container', { nameCall: { required: true, errorMessage: "Error"}, phoneCall: { required: true, errorMessage: "Error"} });	
-}
-validateForms8899('#modal-phone-call-container', { nameCall: { required: true}, phoneCall: { required: true} });
 
 
 
