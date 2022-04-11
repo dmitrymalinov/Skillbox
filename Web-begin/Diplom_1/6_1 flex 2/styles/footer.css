@@ -24,6 +24,13 @@
     color: #8993ad;
 }
 
+.footer-ul-li a {
+    border: 1px solid transparent;
+    transition-property: color, background-color, border-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
 .footer-ul li:not(:first-child) {
     margin-top: 5px;
 }
@@ -114,30 +121,42 @@
 .footer-social-vk:hover {
     background: url(../img/social3.png) no-repeat;
     background-position: bottom -40px left 0px;
-}
 
-/* .footer-social-vk :hover {
-    color: #f53f4f;
-} */
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
 
 .footer-social-facebook:hover {
     background: url(../img/social3.png) no-repeat;
     background-position: bottom -33px left -55px;
+
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .footer-social-twitter:hover {
     background: url(../img/social3.png) no-repeat;
     background-position: bottom -35px left -110px;
+
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .footer-social-instagramm:hover {
     background: url(../img/social3.png) no-repeat;
     background-position: bottom -35px left -168px;
+
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .footer-contacts a {
     font-size: 25px;
     font-weight: 900;
+    
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .copyright {

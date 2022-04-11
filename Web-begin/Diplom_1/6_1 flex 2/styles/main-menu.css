@@ -31,11 +31,13 @@
 
 .li-menu a {
   color: black;
+  transition: color .3s ease, border-color .5s ease;
+  border-bottom: 1px solid transparent;
 }
 
 .li-menu a:hover {
   color: #f53f4f;
-  border-bottom: 1px solid;
+  border-color: #f53f4f;
 }
 
 .li-menu {
@@ -76,6 +78,11 @@
   font-weight: 900;
 
   padding-right: 5px;
+
+  border: 1px solid transparent;
+  transition-property: color, background-color, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .li-phone a:hover {
@@ -88,6 +95,10 @@
   height: 46px;
 
   cursor: pointer;
+  border: 1px solid transparent;
+  transition-property: color, background-color, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .phone-call {

@@ -109,7 +109,7 @@ button {
 button:hover {
 	background-color: white;
   	color: #ff4e2e;
-  	border: 1px solid #ff4e2e;
+  	border-color: #ff4e2e;
 }
 .fixed-container {
   max-width: 1920px;
