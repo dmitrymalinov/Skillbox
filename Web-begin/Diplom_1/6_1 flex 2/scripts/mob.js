@@ -20,6 +20,17 @@ $(document).ready(
 		
 	})	
 );
+//phone-call button for 360px button
+$(document).ready(
+	$(function () {
+		var buttoncall = $(".phone-call");
+		buttoncall.click(function () {
+			$(".modal-phone-call-container").css("display","block");	
+		});
+		
+	})	
+);
+//
 $(document).ready(
 	$(function () {
 		var buttoncall = $(".modal-phone-call-close");
