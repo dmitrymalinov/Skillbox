@@ -276,6 +276,9 @@
     width: 26px;
     height: 26px;
     margin-top: 27px;
+    background-color:unset;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
   }
 
   .li-phone:last-child {
