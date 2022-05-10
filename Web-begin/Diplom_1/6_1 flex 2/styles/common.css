@@ -153,6 +153,7 @@ main {
   	font-weight: normal;
   	font-style: normal;
   	line-height: 1.5;
+	  padding-left: 5px;
 }
 @font-face {
 	font-family: "Roboto-Black";
