@@ -7,16 +7,9 @@
   max-width: 1230px;
 }
 .examples-navigation {
-  /* height: 63px;
-  border: 1px solid red; */
   max-width: 1232px;
-  position: relative;
-  
-  
+  position: relative; 
 }
-/* .swiper-slide{
-  width: 370px;
-} */
 .examples-fig {
   width: 370px;
   margin: 0 auto;
@@ -39,6 +32,7 @@
   width: 18px;
   height: 18px;
   background-color: #ff4e2e;
+  cursor: pointer;
 }
 .what-i-do-examples-ul::-webkit-scrollbar {
   display: none;
@@ -60,6 +54,7 @@
   position: absolute;
   top: -240px;
   z-index: 2;
+  cursor: pointer;
 }
 .what-i-do-examples-arrow-right {
   background: url(../img/rightarrow.png) no-repeat;
@@ -70,6 +65,7 @@
   right: -3px;
   top: -246px;
   z-index: 2;
+  cursor: pointer;
 }
 
 .examples-price {
@@ -133,7 +129,6 @@
     margin-top: unset;
     font-size: 25px;
     padding-top: 13px;
-    margin-right: 16px;
   }
 
   .examples-price {

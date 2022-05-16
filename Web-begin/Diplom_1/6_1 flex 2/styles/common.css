@@ -106,11 +106,6 @@ button {
     background-color: #ff4e2e;
     padding: 0px;
 }
-button:hover {
-	background-color: white;
-  	color: #ff4e2e;
-  	border-color: #ff4e2e;
-}
 .fixed-container {
   max-width: 1920px;
   height: 100%;
