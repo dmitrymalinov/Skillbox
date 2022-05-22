@@ -98,9 +98,15 @@
   transform: translate(-50%, 0);
 
   border: 1px solid transparent;
+}
+
+.what-i-do-price:hover {
   transition-property: color, background-color, border-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+  border: 1px solid #ff4e2e;
+  background-color: white;
+  color: #ff4e2e;
 }
 
 .modal-what-i-do-price-container {

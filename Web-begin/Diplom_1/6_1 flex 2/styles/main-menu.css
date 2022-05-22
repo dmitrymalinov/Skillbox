@@ -93,12 +93,24 @@
 .call-button {
   width: 208px;
   height: 46px;
+ 
+  cursor: pointer; 
+  /* background-color:#ff4e2e; */
+  
+  /* border: 1px solid transparent;
+  transition-property: color, background-color, border-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out; */
 
-  cursor: pointer;
-  border: 1px solid transparent;
+}
+.call-button:hover {
+  
   transition-property: color, background-color, border-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+  border: 1px solid #ff4e2e;
+  background-color: white;
+  color: #ff4e2e;
 }
 
 .phone-call {
@@ -168,6 +180,9 @@
   font-style: normal;
 
   border: 1px solid transparent;
+  
+}
+.modal-phone-call-content-send-button:hover {
   transition-property: color, background-color, border-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;

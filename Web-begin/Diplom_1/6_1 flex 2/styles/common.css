@@ -101,9 +101,11 @@ button {
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
+	background-color: #ff4e2e;
+	color: white;
   
-    color: white;
-    background-color: #ff4e2e;
+    /* color: white;
+    background-color: #ff4e2e;  */
     padding: 0px;
 }
 .fixed-container {
