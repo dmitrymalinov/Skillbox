@@ -95,12 +95,6 @@
   height: 46px;
  
   cursor: pointer; 
-  /* background-color:#ff4e2e; */
-  
-  /* border: 1px solid transparent;
-  transition-property: color, background-color, border-color;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out; */
 
 }
 .call-button:hover {

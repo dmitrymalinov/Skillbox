@@ -161,10 +161,6 @@
   height: 61px;
 
   cursor: pointer;
-/*   border: 1px solid transparent;
-  transition-property: color, background-color, border-color;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out; */
 }
 
 .know-more:hover {
