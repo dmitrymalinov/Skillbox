@@ -21,3 +21,15 @@ print('Задача 9. Игра «Угадай число»')
 # Число больше, чем нужно. Попробуйте ещё раз!
 # Введите число: 7
 # Вы угадали! Число попыток: 4
+num_try = 0
+num_target = int(input('Загадайте число: '))
+while True:
+    num_input = int(input('Введите число: '))
+    num_try +=1
+    if num_input > num_target:
+        print('Число больше, чем нужно. Попробуйте ещё раз!')
+    if num_input < num_target:
+       print('Число меньше, чем нужно. Попробуйте ещё раз!') 
+    if num_input == num_target:
+        print(f'Вы угадали! Число попыток: {num_try}')
+        break
