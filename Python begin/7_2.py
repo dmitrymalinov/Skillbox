@@ -9,3 +9,9 @@ print('Задача 2. Должники')
 # Пользователь вводит 10 чисел.
 # Напишите программу,
 # которая определяет, сколько из них являются одновременно четными и положительными.
+for every_number in range(1,11):
+    current_number = int(input(f"Введите {every_number} число: "))
+    if current_number % 2 ==0 and current_number > 0:
+        print(f"{current_number} Число подходит")
+    else:
+        print(f"{current_number} Число не подходит")
