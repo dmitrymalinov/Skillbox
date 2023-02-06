@@ -36,7 +36,26 @@ print('Задача 10. Кинотеатр')
 # Ответ: Нет решения
 boys = int(input("Введите количество мальчиков: "))
 girls = int(input("Введите количество девочек: "))
-
+row = ""
+current_step = 1
 for i in range(boys,0,-1):
+    #Некийподвид жадного алгоритма. Если число девочек
+    #меньше числа мальчиков то мы должны стараться
+    #максимально использовать рассадку вида GBBGBBG
+    #делая соседями мальчиков
+    #кроме первого мальчика
+    # к тестовому примеру номер2 также справедлива раскладка BGBBGBBG
     current_gender = "B"
+    row +=current_gender
+    girls+=-1
+    row +="G"
     print(i)
+    print(row)
+    if girls ==0 and boys ==0:
+        break
+    if girls ==0 and boys !=0:
+        print("Ответ: Нет решения")
+        break
+    else:
+        print(girls)
+    current_step +=1
