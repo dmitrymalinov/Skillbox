@@ -39,23 +39,27 @@ girls = int(input("Введите количество девочек: "))
 row = ""
 current_step = 1
 for i in range(boys,0,-1):
-    #Некийподвид жадного алгоритма. Если число девочек
+    #Некийподвид жадного (в кавычках) алгоритма. Если число девочек
     #меньше числа мальчиков то мы должны стараться
     #максимально использовать рассадку вида GBBGBBG
     #делая соседями мальчиков
     #кроме первого мальчика
     # к тестовому примеру номер2 также справедлива раскладка BGBBGBBG
     current_gender = "B"
+    if boys > girls and current_step > 1:
+        row +="B"
+        boys +=-1
     row +=current_gender
+    boys+=-1
     girls+=-1
     row +="G"
-    print(i)
-    print(row)
+    #print(f"current step======{current_step}")
+    #print(f"boys: {boys}")
+    #print(f"girls: {girls}")
+    #print(row)
     if girls ==0 and boys ==0:
-        break
+        print(f"Ответ: {row}")
     if girls ==0 and boys !=0:
         print("Ответ: Нет решения")
         break
-    else:
-        print(girls)
     current_step +=1
