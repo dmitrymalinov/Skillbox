@@ -24,4 +24,5 @@ for every_symbol in string_to_check:
         current_length = 0
     else:
         current_length +=1
+        max_lenght = current_length
 print(f"Самое длинное слово, букв: {max_lenght}")
