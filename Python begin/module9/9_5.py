@@ -18,11 +18,11 @@ string_to_check = input("Введите текст: ")
 max_lenght = 0
 current_length = 0
 for every_symbol in string_to_check:
+    current_length +=1
     if every_symbol == " ":
-        if current_length > max_lenght:
-            max_lenght = current_length
         current_length = 0
     else:
-        current_length +=1
-        max_lenght = current_length
+        if current_length > max_lenght:
+            max_lenght = current_length
+   
 print(f"Самое длинное слово, букв: {max_lenght}")
