@@ -19,11 +19,10 @@ table_size = 6
 for row in range(6):
     row_count = row
     for column in range(6):
-        #if row_count %2 == 0:
         if column == table_size - 3 or column == table_size - 2:
-            print(row_count,end = '\t')
+            print(row_count,'\t',end = '')
         else:
-            print(row_count,end='')
+            print(row_count,end=' ')
         row_count +=2
     print()
     
