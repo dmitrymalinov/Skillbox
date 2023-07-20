@@ -13,15 +13,11 @@ print('Задача 6. Пирамидка')
  #####
 #######
 pyramid_height = int(input("Введите высоту пирамиды: "))
-current_symbols = 0
-for every_row in range(pyramid_height):
-    current_spaces = pyramid_height - (every_row + 1)
-    if every_row == 0 :
-        current_symbols += 1
-    else:
-        current_symbols += 2
-    for every_space in range(current_spaces):
-        print(' ',end='')
+current_symbols = 1
+for every_row in range(1,pyramid_height+1):
+    current_spaces = pyramid_height - every_row
+    print(' ' * current_spaces,end = '')
     for every_symbol in range(current_symbols):
         print("#",end = '')
+    current_symbols += 2
     print()
