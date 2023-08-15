@@ -1,3 +1,4 @@
+import math
 print('Задача 2. Грубая математика')
 
 # В одном аналитическом центре,
@@ -26,3 +27,14 @@ print('Задача 2. Грубая математика')
 # 
 # Введите число: -5.9
 # x = -6   exp(x) = 0.0024787521766663585
+numbers_count = int(input("Введите количество чисел: "))
+for every_number in range(1,numbers_count+1):
+    current_real_number = float(input(f"Введите число {every_number}: "))
+    if current_real_number > 0 :
+        number_to_calculate = math.ceil(current_real_number)
+        log_current_real_number = math.log(number_to_calculate)
+        print(f"x = {number_to_calculate}   log(x) = {log_current_real_number}")
+    elif current_real_number < 0 :
+        number_to_calculate = math.floor(current_real_number)
+        exp_current_real_number = math.exp(number_to_calculate)
+        print(f"x = {number_to_calculate}   exp(x) = {exp_current_real_number}")
