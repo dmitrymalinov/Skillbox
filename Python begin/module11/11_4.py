@@ -6,4 +6,3 @@ print('Задача 4. Первая цифра')
 number_x = float(input("Введите число Х: "))
 first_number_after_dot = int((number_x - number_x // 1) // 0.1)
 print(f"Первая цифра после десятичной строчки: {first_number_after_dot}")
-ss=1
