@@ -1,3 +1,4 @@
+import math
 print('Задача 5. Вот это объёмы!')
 
 # Для курсовой работы по физике
@@ -26,3 +27,14 @@ print('Задача 5. Вот это объёмы!')
 # Пример 2:
 # Введите радиус случайной планеты: 7000
 # Объём планеты Земля меньше в (1/0.754) = 1.326 раз
+pi_number = math.pi
+earth_value = 10.8321 * (10 ** 11)
+planet_radius = float(input("Введите радиус случайной планеты: "))
+planet_value = (4 / 3) * pi_number * (planet_radius ** 3)
+ratio_earth_planet = round(earth_value / planet_value,3)
+if ratio_earth_planet > 1:
+    print(f"Объём планеты Земля больше в {ratio_earth_planet} раз")
+elif ratio_earth_planet < 1 :
+    print(f"Объём планеты Земля меньше в (1/{ratio_earth_planet}) = {round(1/ratio_earth_planet,3)} раз")
+else:
+    print("Объемы равны")
