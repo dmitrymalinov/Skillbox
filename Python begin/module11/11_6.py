@@ -16,3 +16,12 @@ print('Задача 6. Ход конём')
 # 0.068
 # Конь в клетке (0, 1). Точка в клетке (2, 0).
 # Да, конь может ходить в эту точку.
+print("Введите местоположения коня")
+x_horse = float(input())
+y_horse = float(input())
+print("Введите местоположение точки на доске:")
+x_point = float(input())
+y_point = float(input())
+
+print(f"Конь в клетке ({int(x_horse * 10)},{int(y_horse * 10)}). Точка в клетке ({int(x_point * 10)},{int(y_point * 10)})")
+

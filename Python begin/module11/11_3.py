@@ -41,5 +41,5 @@ while True :
         print(f"Прошло {total_seconds} сек. Скачано {file_size} из {file_size} Мб (100%)")# ленивый вывод
         break
     else:
-        current_progress = math.ceil((current_downloaded / file_size) * 100)
+        current_progress = (current_downloaded / file_size) * 100
         print(f"Прошло {total_seconds} сек. Скачано {current_downloaded} из {file_size} Мб ({current_progress}%)")
