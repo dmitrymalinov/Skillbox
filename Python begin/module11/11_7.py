@@ -18,3 +18,7 @@ print('Задача 7. За что?')
 # Введите второе число: 5
 # 
 # Наибольшее число: 10
+first_number = int(input("Введите первое число: "))
+second_number = int(input("Введите второе число: "))
+#(first_number // second_number * first_number + second_number // first_number * second_number) // (first_number // second_number + second_number // first_number)
+ss=1
