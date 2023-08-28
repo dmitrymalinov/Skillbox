@@ -30,7 +30,7 @@ y_point = float(input())
 print(f"Конь в клетке ({int(x_horse * 10)},{int(y_horse * 10)}). Точка в клетке ({int(x_point * 10)},{int(y_point * 10)})")
 delta_x = abs(x_point - x_horse)
 delta_y = abs(y_point - y_horse)
-if delta_x == 2 and delta_y == 1:
+if delta_x == 2 and delta_y == 1: 
     print("Да, конь может ходить в эту точку.")
 else:
     print("Нет, конь не может ходить в эту точку.")
