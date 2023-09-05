@@ -20,5 +20,5 @@ print('Задача 7. За что?')
 # Наибольшее число: 10
 first_number = int(input("Введите первое число: "))
 second_number = int(input("Введите второе число: "))
-#(first_number // second_number * first_number + second_number // first_number * second_number) // (first_number // second_number + second_number // first_number)
-ss=1
+max_number = (first_number + second_number)/2 + abs(first_number - (first_number + second_number)/2)
+print(f"Наибольшее число: {int(max_number)}")
