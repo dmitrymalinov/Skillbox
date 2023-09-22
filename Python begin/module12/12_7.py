@@ -1,3 +1,4 @@
+import random
 print('Задача 7. Недоделка')
 
 # Вы пришли на работу в контору по разработке игр,
@@ -24,11 +25,91 @@ print('Задача 7. Недоделка')
 
 def rock_paper_scissors():
     #Здесь будет игра "Камень, ножницы, бумага"
-
+    #Предложим выбор одного из вариантов
+    print("Игра Камень, ножницы, бумага")
+    user_choice = int(input("Выберите один из вариантов: 1- камень, 2 - ножницы, 3- бумага: "))
+    computer_joice = random.randint(1,3)
+    # выбор пользователя
+    if user_choice == 1:
+        print("Вы выбрали камень")
+    elif user_choice == 2:
+        print("Вы выбрали ножницы")
+    elif user_choice == 3:
+        print("Вы выбрали бумагу")
+    else:
+        print("Не верный вариант")
+        rock_paper_scissors()
+    # выбор компьютера 
+    if computer_joice == 1:
+        print("Компьтер выбрал камень")
+    elif computer_joice == 2:
+        print("Компьтер выбрал ножницы")
+    elif computer_joice == 3:
+        print("Компьтер выбрал бумагу")
+    else:
+        print("Не верный вариант")
+        rock_paper_scissors()
+    # кто победил
+    # самое простое ничья
+    if user_choice == computer_joice:
+        print("Ничья")
+    # обраюотаем каждый выбор
+    # игрок выбрал камень
+    if user_choice == 1:
+        # остаются ножницы и бумага
+        if computer_joice == 2: #ножницы
+           print("Камень бьет ножницы! Вы победили!")
+        else:# бумага
+            print("Бумага оборачивает камень! Вы проиграли.")
+    # игрок выбрал ножницы
+    elif user_choice == 2:
+        # остаются камень и бумага
+        if computer_joice == 1: #камень
+           print("Камень бьет ножницы! Вы проиграли!")
+        else:# бумага
+            print("Ножницы режут бумагу! Вы победили!")
+    # игрок выбрал бумагу
+    elif user_choice == 3:
+        # остаются камень и бумага
+        if computer_joice == 1: #камень
+           print("Бумага оборачивает камень! Вы победили!")
+        else:# ножницы
+            print("Ножницы режут бумагу! Вы проиграли!")
+    current_try = int(input("Сыграем еще ?: 1 - да, 2- нет: "))
+    if current_try == 1:
+        rock_paper_scissors()
+    else:
+        mainMenu()
 def guess_the_number():
-    #Здесь будет игра "Угадай число"
+    # Для простоты ограничим диапазон чисел
+    computer_choice = random.randint(1,10)
+    print("Компьютер загадл число от 1 до 10: ")
+    while True:
+        user_choice = int(input("Введите ваш вариант: "))
+        if user_choice > 10 or user_choice < 1:
+            print("Вы ввели неправильно число. Попробуйте еще раз")
+        else:
+            if user_choice == computer_choice:
+                print("Вы угадали!")
+                break
+            elif user_choice > computer_choice:
+                print("Ваше число больше загаданного компьтером")
+            else:
+                print("Ваше число меньше загаданного компьтером")
+    current_try = int(input("Сыграем еще ?: 1 - да, 2- нет: "))
+    if current_try == 1:
+        guess_the_number()
+    else:
+        mainMenu()
 
 def mainMenu():
     #Здесь главное меню игры
+    current_game = int(input("Выберите игру: 1 - Камень, ножницы, бумага. 2 - Угадай число: "))
+    if current_game == 1:
+        rock_paper_scissors()
+    if current_game ==2:
+        guess_the_number()
+    else:
+        mainMenu()
 
 mainMenu()
