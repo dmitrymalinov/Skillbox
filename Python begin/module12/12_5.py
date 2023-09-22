@@ -19,3 +19,17 @@ print('Задача 5. Текстовый редактор')
 # 
 # Количество цифр 0: 2
 # Количество букв л: 1
+def count_letters(current_text,number_to_search,letter_to_search):
+    count_numbers = 0
+    count_letters = 0
+    for every_letter in current_text:
+        if every_letter == number_to_search:
+            count_numbers += 1
+        if every_letter == letter_to_search:
+            count_letters += 1    
+    print(f"Количество цифр {number_to_search}: {count_numbers}")
+    print(f"Количество букв {letter_to_search}: {count_letters}")
+current_text = input("Введите текст: ")
+number_to_search = input("Какую цифру ищем? ")
+letter_to_search = input("Какую букву ищем? ")
+count_letters(current_text,number_to_search,letter_to_search)
