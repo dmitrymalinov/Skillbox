@@ -26,10 +26,8 @@ print('Задача 1. Урок информатики 2')
 # Если у нас число маленькое и степень чилса минусовая то нам надо выйти к 1
 #иначе к 0 в делении с остатком
 def float_format(number,direction):
-    current_number = 0
     while True:
         last_digit = number // math.pow(10,direction)
-        ss=1
         if direction < 0:
             if last_digit == 1:
                 print(f"Формат плавающей точки: x = {number / math.pow(10,direction)} * 10 ** {direction}")
@@ -42,7 +40,6 @@ def float_format(number,direction):
             direction += 1    
     
 number = float(input("Введите число: "))
-ss=1
 current_direction = number // 10
 choose_direction = 0
 if current_direction == 0:
