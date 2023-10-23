@@ -1,3 +1,4 @@
+DECERASE_VALUE = 8.4
 print('Задача 5. Маятник ')
 
 # Известно, что амплитуда качающегося маятника с каждым разом затухает
@@ -23,3 +24,15 @@ print('Задача 5. Маятник ')
 # Введите амплитуду остановки: 0.1
  
 # Маятник считается остановившимся через 27 колебаний
+def amplitude(initial_value,precision):
+    fluctuations = 1
+    while True:
+        initial_value = initial_value - (initial_value *(DECERASE_VALUE/100))
+        if initial_value < precision:
+            print(f"Маятник считается остановившимся через {fluctuations} колебаний")
+            break
+        fluctuations += 1
+
+initial_value = float(input("Введите начальную амплитуду: "))
+precision = float(input("Введите амплитуду остановки: "))
+amplitude(initial_value,precision)
