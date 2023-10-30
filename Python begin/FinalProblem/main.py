@@ -32,7 +32,7 @@ def general_info_user(n_parameter, a_parameter, ph_parameter, e_parameter, i_par
             print(i_parameter)
     
 
-print('Приложение MyProfile')
+print('Приложение MyProfile для предпринимателей')
 print('Сохраняй информацию о себе и выводи ее в разных форматах')
 
 while True:
@@ -53,7 +53,7 @@ while True:
             print(SEPARATOR)
             print('ВВЕСТИ ИЛИ ОБНОВИТЬ ИНФОРМАЦИЮ')
             print('1 - Общая информация')
-            print('2 - Социальные сети и мессенджеры')
+            print('2 - Информация о предпринимателе')
             print('0 - Назад')
 
             option2 = int(input('Введите номер пункта меню: '))
@@ -90,7 +90,7 @@ while True:
         while True:
             print(SEPARATOR)
             print('ВЫВЕСТИ ИНФОРМАЦИЮ')
-            print('1 - Общая информация')
+            print('1 - Личная информация')
             print('2 - Вся информация')
             print('0 - Назад')
 
