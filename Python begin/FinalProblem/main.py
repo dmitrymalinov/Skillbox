@@ -12,7 +12,21 @@ i = ''
 v = ''
 t = ''
 tk = ''
-
+#my new variables
+age = 0
+phone_number = ''
+email =''
+additional_info = ''
+#my new functions
+def validate_age(age):
+    if age > 0:
+         return True
+    else:
+         return False
+def phone_number(user_phone):
+    for every_symbol in user_phone:
+        if every_symbol == '+' or ('0' <= every_symbol <= '9'):
+            phone_number += every_symbol          
 
 def general_info_user(n_parameter, a_parameter, ph_parameter, e_parameter, i_parameter):
     print(SEPARATOR)
@@ -52,7 +66,7 @@ while True:
         while True:
             print(SEPARATOR)
             print('ВВЕСТИ ИЛИ ОБНОВИТЬ ИНФОРМАЦИЮ')
-            print('1 - Общая информация')
+            print('1 - Личная информация')
             print('2 - Информация о предпринимателе')
             print('0 - Назад')
 
@@ -62,22 +76,15 @@ while True:
             if option2 == 1:
                 # input general info
                 n = input('Введите имя: ')
-                while 1:
-                        # validate user age
-                        a = int(input('Введите возраст: '))
-                        if a > 0:
-                            break
-                        print('Возраст должен быть положительным')
-
-                uph = input('Введите номер телефона (+7ХХХХХХХХХХ): ')
-                ph = ''
-                for ch in uph:
-                    if ch == '+' or ('0' <= ch <= '9'):
-                        ph += ch
-
-
-                e = input('Введите адрес электронной почты: ')
-                i = input('Введите дополнительную информацию:\n')
+                user_age = int(input('Введите возраст: '))
+                if validate_age(user_age):
+                    age = user_age
+                else:
+                    print('Возраст должен быть положительным')
+                user_phone =  input('Введите номер телефона (+7ХХХХХХХХХХ): ')
+                phone_number(user_phone)
+                email = input('Введите адрес электронной почты: ')
+                additional_info = input('Введите дополнительную информацию:\n')
 
             elif option2 == 2:
                 # input social links
