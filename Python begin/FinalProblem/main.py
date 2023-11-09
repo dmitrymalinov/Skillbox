@@ -18,6 +18,8 @@ name = ''
 age = 0
 phone_number = ''
 email =''
+zip_code = ''
+adress = ''
 additional_info = ''
 
 ogrn_ip = ''
@@ -45,7 +47,12 @@ def input_length_check(user_input,Length):
         return True
     else:
         return False
-        
+def zip_code_only_digit(zip_code_user_input):
+    current_zip_code = ""
+    for every_symbol in zip_code_user_input:
+        if '0' <= every_symbol <= '9':
+            current_zip_code += every_symbol
+    return current_zip_code           
     
 def general_info_user(n_parameter, a_parameter, ph_parameter, e_parameter, i_parameter):
     print(SEPARATOR)
@@ -95,20 +102,37 @@ while True:
             if option2 == 1:
                 # input general info
                 name = input('Введите имя: ')
-                user_age = int(input('Введите возраст: '))
-                if validate_age(user_age):
-                    age = user_age
-                else:
-                    print('Возраст должен быть положительным')
-                    user_phone =  input('Введите номер телефона (+7ХХХХХХХХХХ): ')
-                    phone_number(user_phone)
-                    email = input('Введите адрес электронной почты: ')
-                    additional_info = input('Введите дополнительную информацию:\n')
+                while True:
+                    user_age = int(input('Введите возраст: '))
+                    if validate_age(user_age):
+                        age = user_age
+                        break
+                    else:
+                        print('Возраст должен быть положительным')
+                user_phone =  input('Введите номер телефона (+7ХХХХХХХХХХ): ')
+                phone_number = phone_number(user_phone)
+                email = input('Введите адрес электронной почты: ')
+                zip_code_user_input = input("Введите почтовый индекс: ")
+                zip_code = zip_code_only_digit(zip_code_user_input)
+                adress = input("Введите почтовый адрес (без индекса): ")
+                additional_info = input('Введите дополнительную информацию:\n')
             elif option2 == 2:
-                # input entrepreneur info
-                ogrn_ip_user_input = input("Введите ОГРНИП: ")
-                inn_ip_suer_input = input("Введите ИНН: ")
-                bank_account = input("Введите расчетный счет: ")
+                # input entrepreneur info 
+                while True:
+                    ogrn_ip_user_input = input("Введите ОГРНИП: ")
+                    if input_length_check(ogrn_ip_user_input,15):
+                        ogrn_ip = ogrn_ip_user_input
+                        break
+                    else:
+                        print("ОГРНИП должен содержать 15 цифр")
+                inn_ip_user_input = input("Введите ИНН: ")
+                while True:
+                    bank_account_user_input = input("Введите расчетный счет: ")
+                    if input_length_check(bank_account_user_input,20):
+                        bank_account = bank_account_user_input
+                        break
+                    else:
+                        print("Расчетный счет должен содержать 20 цифр")
                 bank_name = input("Введите название банка: ")
                 bank_id = input("Введите БИК: ")
                 corr_bank_account = input("Введите корреспондентский счет: ")
