@@ -13,10 +13,19 @@ v = ''
 t = ''
 tk = ''
 #my new variables
+#global problem
+name = ''
 age = 0
 phone_number = ''
 email =''
 additional_info = ''
+
+ogrn_ip = ''
+inn = ''
+bank_account = ''
+bank_name = ''
+bank_id = ''
+corr_bank_account = ''
 #my new functions
 def validate_age(age):
     if age > 0:
@@ -26,8 +35,18 @@ def validate_age(age):
 def phone_number(user_phone):
     for every_symbol in user_phone:
         if every_symbol == '+' or ('0' <= every_symbol <= '9'):
-            phone_number += every_symbol          
-
+            phone_number += every_symbol
+def input_length_check(user_input,Length):
+    current_length = 0
+    for every_symbol in user_input:
+        if '0' <= every_symbol <= '9':
+            current_length += 1
+    if current_length == Length:
+        return True
+    else:
+        return False
+        
+    
 def general_info_user(n_parameter, a_parameter, ph_parameter, e_parameter, i_parameter):
     print(SEPARATOR)
     print('Имя:    ', n_parameter)
@@ -75,22 +94,24 @@ while True:
                 break
             if option2 == 1:
                 # input general info
-                n = input('Введите имя: ')
+                name = input('Введите имя: ')
                 user_age = int(input('Введите возраст: '))
                 if validate_age(user_age):
                     age = user_age
                 else:
                     print('Возраст должен быть положительным')
-                user_phone =  input('Введите номер телефона (+7ХХХХХХХХХХ): ')
-                phone_number(user_phone)
-                email = input('Введите адрес электронной почты: ')
-                additional_info = input('Введите дополнительную информацию:\n')
-
+                    user_phone =  input('Введите номер телефона (+7ХХХХХХХХХХ): ')
+                    phone_number(user_phone)
+                    email = input('Введите адрес электронной почты: ')
+                    additional_info = input('Введите дополнительную информацию:\n')
             elif option2 == 2:
-                # input social links
-                v = input('Введите адрес профиля Вконтакте: ')
-                t = input('Введите логин Telegram: ')
-                tk = input('Введите логин Tiktok: ')
+                # input entrepreneur info
+                ogrn_ip_user_input = input("Введите ОГРНИП: ")
+                inn_ip_suer_input = input("Введите ИНН: ")
+                bank_account = input("Введите расчетный счет: ")
+                bank_name = input("Введите название банка: ")
+                bank_id = input("Введите БИК: ")
+                corr_bank_account = input("Введите корреспондентский счет: ")
             else: print('Введите корректный пункт меню')
     elif option == 2:
         # submenu 2: print info
