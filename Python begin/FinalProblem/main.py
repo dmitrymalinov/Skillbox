@@ -3,17 +3,6 @@
 SEPARATOR = '------------------------------------------'
 
 # user profile
-n = ''
-a = 0
-ph = ''
-e = ''
-i = ''
-# social links
-v = ''
-t = ''
-tk = ''
-#my new variables
-#global problem
 name = ''
 age = 0
 phone_number = ''
@@ -21,23 +10,25 @@ email =''
 zip_code = ''
 adress = ''
 additional_info = ''
-
+#entrepreneur_info
 ogrn_ip = ''
 inn = ''
 bank_account = ''
 bank_name = ''
 bank_id = ''
 corr_bank_account = ''
-#my new functions
+#functions
 def validate_age(age):
     if age > 0:
          return True
     else:
          return False
 def phone_number(user_phone):
+    curent_phone_number = ''
     for every_symbol in user_phone:
         if every_symbol == '+' or ('0' <= every_symbol <= '9'):
-            phone_number += every_symbol
+            curent_phone_number += every_symbol
+    return curent_phone_number
 def input_length_check(user_input,Length):
     current_length = 0
     for every_symbol in user_input:
@@ -54,24 +45,35 @@ def zip_code_only_digit(zip_code_user_input):
             current_zip_code += every_symbol
     return current_zip_code           
     
-def general_info_user(n_parameter, a_parameter, ph_parameter, e_parameter, i_parameter):
+def general_info_user(name, age, phone_number, email, zip_code,adress,additional_info):
     print(SEPARATOR)
-    print('Имя:    ', n_parameter)
-    if 11 <= a_parameter % 100 <= 19: years_parameter = 'лет'
-    elif a_parameter % 10 == 1: years_parameter = 'год'
-    elif 2 <= a_parameter % 10 <= 4: years_parameter = 'года'
+    print('Имя:    ', name)
+    if 11 <= age % 100 <= 19: years_parameter = 'лет'
+    elif age % 10 == 1: years_parameter = 'год'
+    elif 2 <= age % 10 <= 4: years_parameter = 'года'
     else: years_parameter = 'лет'
 
 
-    print('Возраст:', a_parameter, years_parameter)
-    print('Телефон:', ph_parameter)
-    print('E-mail: ', e_parameter)
-    if i:
+    print('Возраст:', age, years_parameter)
+    print('Телефон:', phone_number)
+    print('E-mail: ', email)
+    print('Индекс: ', zip_code)
+    print('Адрес: ', adress)
+    if additional_info:
             print('')
             print('Дополнительная информация:')
-            print(i_parameter)
+            print(additional_info)
     
-
+def entrepreneur_info(ogrn_ip,inn,bank_account,bank_name,bank_id,corr_bank_account):
+    print('')
+    print("Информация о предпринимателе")
+    print(f"ОГРНИП: {ogrn_ip}")
+    print(f"ИНН: {inn}")
+    print(f"Р/с: {bank_account}")
+    print("Банковские реквизиты")
+    print(f"Банк: {bank_name}")
+    print(f"БИК: {bank_id}")
+    print(f"К/с: {corr_bank_account}")
 print('Приложение MyProfile для предпринимателей')
 print('Сохраняй информацию о себе и выводи ее в разных форматах')
 
@@ -150,16 +152,13 @@ while True:
             if option2 == 0:
                 break
             if option2 == 1:
-                general_info_user(n, a, ph, e, i)
+                #general_info_user(n, a, ph, e, i)
+                general_info_user(name,age,phone_number,email,zip_code,adress,additional_info)
 
             elif option2 == 2:
-                general_info_user(n, a, ph, e, i)
+                general_info_user(name,age,phone_number,email,zip_code,adress,additional_info)
 
-                # print social links
-                print('')
-                print('Социальные сети и мессенджеры')
-                print('Вконтакте:', v)
-                print('Telegram: ', t)
-                print('Tiktok:   ', tk)
+                # print entrepreneur_info
+                entrepreneur_info(ogrn_ip,inn,bank_account,bank_name,bank_id,corr_bank_account)
             else:   print('Введите корректный пункт меню')
     else:       print('Введите корректный пункт меню')
