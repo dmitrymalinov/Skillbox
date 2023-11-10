@@ -152,13 +152,11 @@ while True:
             if option2 == 0:
                 break
             if option2 == 1:
-                #general_info_user(n, a, ph, e, i)
                 general_info_user(name,age,phone_number,email,zip_code,adress,additional_info)
 
             elif option2 == 2:
                 general_info_user(name,age,phone_number,email,zip_code,adress,additional_info)
 
-                # print entrepreneur_info
                 entrepreneur_info(ogrn_ip,inn,bank_account,bank_name,bank_id,corr_bank_account)
             else:   print('Введите корректный пункт меню')
     else:       print('Введите корректный пункт меню')
