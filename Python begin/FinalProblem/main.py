@@ -75,7 +75,8 @@ def general_info_user(name, age, phone_number, email, zip_code, address, additio
         print('')
         print('Дополнительная информация:')
         print(additional_info)
-    
+
+
 def entrepreneur_info(ogrn_ip, inn, bank_account, bank_name, bank_id, corr_bank_account):
     print('')
     print("Информация о предпринимателе")
@@ -130,13 +131,13 @@ while True:
                 email = input('Введите адрес электронной почты: ')
                 zip_code_user_input = input("Введите почтовый индекс: ")
                 zip_code = zip_code_only_digit(zip_code_user_input)
-                adress = input("Введите почтовый адрес (без индекса): ")
+                address = input("Введите почтовый адрес (без индекса): ")
                 additional_info = input('Введите дополнительную информацию:\n')
             elif option2 == 2:
                 # input entrepreneur info 
                 while True:
                     ogrn_ip_user_input = input("Введите ОГРНИП: ")
-                    if input_length_check(ogrn_ip_user_input,15):
+                    if input_length_check(ogrn_ip_user_input, 15):
                         ogrn_ip = ogrn_ip_user_input
                         break
                     else:
@@ -144,7 +145,7 @@ while True:
                 inn_ip_user_input = input("Введите ИНН: ")
                 while True:
                     bank_account_user_input = input("Введите расчетный счет: ")
-                    if input_length_check(bank_account_user_input,20):
+                    if input_length_check(bank_account_user_input, 20):
                         bank_account = bank_account_user_input
                         break
                     else:
@@ -152,7 +153,8 @@ while True:
                 bank_name = input("Введите название банка: ")
                 bank_id = input("Введите БИК: ")
                 corr_bank_account = input("Введите корреспондентский счет: ")
-            else: print('Введите корректный пункт меню')
+            else:
+                print('Введите корректный пункт меню')
     elif option == 2:
         # submenu 2: print info
         while True:
