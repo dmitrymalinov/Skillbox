@@ -52,7 +52,6 @@ def zip_code_only_digit(zip_code_user_input):
     return current_zip_code           
     
 
-
 def general_info_user(name, age, phone_number, email, zip_code, address, additional_info):
     print(SEPARATOR)
     print('Имя:    ', name)
@@ -70,7 +69,7 @@ def general_info_user(name, age, phone_number, email, zip_code, address, additio
     print('Телефон:', phone_number)
     print('E-mail: ', email)
     print('Индекс: ', zip_code)
-    print('Адрес: ', adress)
+    print('Адрес: ', address)
     if additional_info:
         print('')
         print('Дополнительная информация:')
