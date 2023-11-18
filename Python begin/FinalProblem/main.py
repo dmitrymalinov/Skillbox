@@ -1,5 +1,4 @@
 # MyProfile app
-
 SEPARATOR = '------------------------------------------'
 
 # user profile
