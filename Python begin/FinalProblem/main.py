@@ -33,7 +33,7 @@ def phone_number(user_phone):
     return current_phone_number
 
 
-def input_length_check(user_input, Length):
+def input_length_check(user_input, length):
     current_length = 0
     for every_symbol in user_input:
         if '0' <= every_symbol <= '9':
