@@ -1,6 +1,5 @@
 # MyProfile app
 SEPARATOR = '------------------------------------------'
-
 # user profile
 name = ''
 age = 0
