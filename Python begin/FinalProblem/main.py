@@ -64,7 +64,6 @@ def general_info_user(name, age, phone_number, email, zip_code, address, additio
     else:
         years_parameter = 'лет'
 
-
     print('Возраст:', age, years_parameter)
     print('Телефон:', phone_number)
     print('E-mail: ', email)
