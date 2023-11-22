@@ -38,7 +38,7 @@ def input_length_check(user_input, length):
     for every_symbol in user_input:
         if '0' <= every_symbol <= '9':
             current_length += 1
-    if current_length == Length:
+    if current_length == length:
         return True
     else:
         return False
